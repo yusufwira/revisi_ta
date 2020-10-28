@@ -2,7 +2,6 @@
 header("Access-Control-Allow-Origin: *");
 require('../connection.php');
 
-$idKriteria = $_POST['id_kriteria'];
 $sql = "SELECT * FROM kriteria_detail kd INNER JOIN kriteria k on kd.kriteria_idkriteria=k.idkriteria";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {		
