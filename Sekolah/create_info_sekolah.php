@@ -18,7 +18,7 @@ $iduser = $_POST['username'];
 $sql = "INSERT INTO info_sekolah (npsn, nama_sekolah, 
 alamat_sekolah, notelp_sekolah, kecamatan, agama, nama_kepala_sekolah, 
 jam_sekolah, status_sekolah, keterangan_status_sekolah, users_id_users)
-VALUES ($npsp, '$nama', '$alamat', '$telp', '$kecamatan', '$agama', '$kepala', '$jam','Belum Tervalidasi',null, $iduser)";
+VALUES ($npsp, '$nama', '$alamat', '$telp', '$kecamatan', '$agama', '$kepala', '$jam','Belum Tervalidasi','Menunggu konfirmasi dari admin', $iduser)";
 
 if ($conn->query($sql) === TRUE) {
     $last_id = $conn->insert_id;

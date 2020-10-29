@@ -14,7 +14,8 @@ if ($result->num_rows > 0) {
         $list_sekolah[$i]['nama_sekolah'] = addslashes(htmlentities($obj['nama_sekolah']));
         $list_sekolah[$i]['alamat_sekolah'] = addslashes(htmlentities($obj['alamat_sekolah'])); 
         $list_sekolah[$i]['notelp_sekolah'] = addslashes(htmlentities($obj['notelp_sekolah']));  
-        $list_sekolah[$i]['status_sekolah'] = addslashes(htmlentities($obj['status_sekolah'])); 
+        $list_sekolah[$i]['status_sekolah'] = addslashes(htmlentities($obj['status_sekolah']));
+        $list_sekolah[$i]['keterangan'] = addslashes(htmlentities($obj['keterangan_status_sekolah'])); 
         $list_sekolah[$i]['username'] = addslashes(htmlentities($obj['username']));  
         $list_sekolah[$i]['nama_foto'] = addslashes(htmlentities($obj['nama_foto'])); 
         $list_sekolah[$i]['extention'] = addslashes(htmlentities($obj['extention']));    
