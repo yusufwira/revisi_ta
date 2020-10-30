@@ -5,7 +5,7 @@ require('../connection.php');
 
 $idSekolah = $_GET['id_sekolah'];
 
-$sql = "SELECT *, u.username FROM foto_sekolah f INNER JOIN info_sekolah s on 
+$sql = "SELECT *, u.username, s.kecamatan as kecamatan FROM foto_sekolah f INNER JOIN info_sekolah s on 
 f.info_sekolah_idinfo_sekolah = s.npsn INNER JOIN users u on s.users_id_users=u.id_users 
 where s.npsn = ".$idSekolah;
 
