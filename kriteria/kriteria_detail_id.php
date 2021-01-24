@@ -11,6 +11,7 @@ if ($result->num_rows > 0) {
     $i=0;
 	while ($obj = $result->fetch_assoc()) {
         $detail[$i]['id_detail'] = addslashes(htmlentities($obj['iddetail_kriteria']));
+        $detail[$i]['id_kriteria'] = addslashes(htmlentities($obj['idkriteria']));
         $detail[$i]['nama_kriteria'] = addslashes(htmlentities($obj['nama_kriteria']));
         $detail[$i]['detail'] = addslashes(htmlentities($obj['detail']));
         $i++ ;

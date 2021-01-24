@@ -19,7 +19,7 @@ $iduser = $_POST['username'];
 
 $sql = "UPDATE info_sekolah SET nama_sekolah= '$nama', alamat_sekolah = '$alamat', notelp_sekolah = '$telp', kecamatan = '$kecamatan', agama = '$agama', nama_kepala_sekolah = '$kepala', jam_sekolah = '$jam' WHERE npsn = $npsp ";
 if ($conn->query($sql) === TRUE) {   
-    echo json_encode($npsp);
+    echo json_encode("sukses");
 } else {
      echo json_encode("Error: " . $sql . "<br>" . $conn->error);
 }
